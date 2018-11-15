@@ -2,11 +2,52 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Blog{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="https://blackrockdigital.github.io/startbootstrap-4-col-portfolio/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://blackrockdigital.github.io/startbootstrap-4-col-portfolio/css/4-col-portfolio.css">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+
+        <!--Navigateur-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="">Blog</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="">Liste menbre</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="">Contacte</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin navigateur-->
+        
         {% block body %}{% endblock %}
+
+        <!--Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright © M.J.B 2018</p>
+            </div>
+        </footer>
+        <!--Fin footer-->
+        <script src="https://blackrockdigital.github.io/startbootstrap-4-col-portfolio/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://blackrockdigital.github.io/startbootstrap-4-col-portfolio/vendor/jquery/jquery.min.js"></script>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
