@@ -26,4 +26,14 @@ class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
+
+    /**
+     * @Route("/listemenbres", name="listemenbres")
+     */
+    public function listemenbres()
+    {
+        return $this->render('blog/listemenbres.html.twig', [
+            'controller_name' => 'BlogController',
+        ]);
+    }
 }
